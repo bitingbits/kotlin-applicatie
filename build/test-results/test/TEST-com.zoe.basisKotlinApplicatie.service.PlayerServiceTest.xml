@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.zoe.basisKotlinApplicatie.service.PlayerServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-10-17T11:49:56" hostname="Zoes-MacBook-Pro.local" time="0.053">
+  <properties/>
+  <testcase name="testScore" classname="com.zoe.basisKotlinApplicatie.service.PlayerServiceTest" time="0.036"/>
+  <testcase name="testLeaders" classname="com.zoe.basisKotlinApplicatie.service.PlayerServiceTest" time="0.014"/>
+  <system-out><![CDATA[2018-10-17 13:49:55.411  INFO 34187 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.zoe.basisKotlinApplicatie.service.PlayerServiceTest], using SpringBootContextLoader
+2018-10-17 13:49:55.412  INFO 34187 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.zoe.basisKotlinApplicatie.service.PlayerServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2018-10-17 13:49:55.412  INFO 34187 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.zoe.basisKotlinApplicatie.service.PlayerServiceTest]: PlayerServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2018-10-17 13:49:55.423  INFO 34187 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.zoe.basisKotlinApplicatie.BasisKotlinApplicatieApplication for test class com.zoe.basisKotlinApplicatie.service.PlayerServiceTest
+2018-10-17 13:49:55.428  INFO 34187 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2018-10-17 13:49:55.428  INFO 34187 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@73cd17cd, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@b1761e5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7bc2e38a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2680ff82, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3d68e7e0, org.springframework.test.context.transaction.TransactionalTestExecutionListener@d40b1e1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@61f2dd70, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@402f4223, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3a02ea21, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@32c58b39, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@452bd94c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7fafb590]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.0.6.RELEASE)
+
+2018-10-17 13:49:55.457  INFO 34187 --- [    Test worker] c.z.b.service.PlayerServiceTest          : Starting PlayerServiceTest on Zoes-MacBook-Pro.local with PID 34187 (started by zoekroon in /Users/zoekroon/Documents/basisKotlinApplicatie)
+2018-10-17 13:49:55.460  INFO 34187 --- [    Test worker] c.z.b.service.PlayerServiceTest          : No active profile set, falling back to default profiles: default
+2018-10-17 13:49:55.465  INFO 34187 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@584f7f0f: startup date [Wed Oct 17 13:49:55 CEST 2018]; root of context hierarchy
+2018-10-17 13:49:55.776  INFO 34187 --- [    Test worker] c.z.b.TestConfiguration                  : Instantiating Fongo with name test.
+2018-10-17 13:49:55.981  INFO 34187 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 13:49:56.121  INFO 34187 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@584f7f0f: startup date [Wed Oct 17 13:49:55 CEST 2018]; root of context hierarchy
+2018-10-17 13:49:56.141  INFO 34187 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/leaders],methods=[GET]}" onto public java.util.List<java.lang.String> com.zoe.basisKotlinApplicatie.controller.LeadersController.getLeaders()
+2018-10-17 13:49:56.142  INFO 34187 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/player/{handle}/score],methods=[POST]}" onto public java.lang.String com.zoe.basisKotlinApplicatie.controller.PlayerController.postPlayerScore(java.lang.String,java.lang.String)
+2018-10-17 13:49:56.146  INFO 34187 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-17 13:49:56.147  INFO 34187 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-17 13:49:56.169  INFO 34187 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 13:49:56.170  INFO 34187 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 13:49:56.331  INFO 34187 --- [    Test worker] c.z.b.service.PlayerServiceTest          : Started PlayerServiceTest in 0.9 seconds (JVM running for 5.813)
+2018-10-17 13:49:56.355  INFO 34187 --- [    Test worker] c.z.b.service.PlayerServiceTest          : Begin testScore
+2018-10-17 13:49:56.372  INFO 34187 --- [    Test worker] c.z.b.service.PlayerServiceTest          : End testScore
+2018-10-17 13:49:56.385  INFO 34187 --- [    Test worker] c.z.b.service.PlayerServiceTest          : Begin testLeaders
+2018-10-17 13:49:56.389  INFO 34187 --- [    Test worker] c.z.b.service.PlayerServiceTest          : End testLeaders
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
